@@ -26,7 +26,7 @@ app.add_middleware(
 )
 def task_breakdown(task:str):
     """Breaks down a task into smaller programmable steps using Google GenAI."""
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    client = genai.Client(api_key=os.getenv("AIzaSyDgb-mmWyWE3RewJ9IM4WuLVe3XLLDcdKQ"))
 
     task_breakdown_file = os.path.join('prompts', "abdul_task_breakdown.txt")
     with open(task_breakdown_file, 'r') as f:
