@@ -11,7 +11,8 @@
 from fastapi import FastAPI,File, UploadFile    
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from google import genai
+import google.generativeai as genai
+
 import os
 app = FastAPI()
 
